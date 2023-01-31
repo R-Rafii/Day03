@@ -14,5 +14,16 @@ namespace Day03.Controllers
             return View();
             // jyjfhkvhjnm SS
         }
+
+        public ActionResult Submit()
+        {
+            TempData["msg"] = "Login Successful";
+            return RedirectToAction("Index", "Dash");
+        }
+
+        public ActionResult SignUp()
+        {
+            return View();
+        }
     }
 }
